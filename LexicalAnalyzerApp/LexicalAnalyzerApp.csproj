@@ -1,0 +1,134 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="15.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <Import Project="$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props" Condition="Exists('$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props')" />
+  <PropertyGroup>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
+    <ProjectGuid>{3B0F895F-7F9D-4737-BCA6-3FEE46C64C18}</ProjectGuid>
+    <OutputType>WinExe</OutputType>
+    <RootNamespace>LexicalAnalyzerApp</RootNamespace>
+    <AssemblyName>LexicalAnalyzerApp</AssemblyName>
+    <TargetFrameworkVersion>v4.7</TargetFrameworkVersion>
+    <FileAlignment>512</FileAlignment>
+    <AutoGenerateBindingRedirects>true</AutoGenerateBindingRedirects>
+    <Deterministic>true</Deterministic>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
+    <PlatformTarget>AnyCPU</PlatformTarget>
+    <DebugSymbols>true</DebugSymbols>
+    <DebugType>full</DebugType>
+    <Optimize>false</Optimize>
+    <OutputPath>bin\Debug\</OutputPath>
+    <DefineConstants>DEBUG;TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|AnyCPU' ">
+    <PlatformTarget>AnyCPU</PlatformTarget>
+    <DebugType>pdbonly</DebugType>
+    <Optimize>true</Optimize>
+    <OutputPath>bin\Release\</OutputPath>
+    <DefineConstants>TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <ItemGroup>
+    <Reference Include="System" />
+    <Reference Include="System.Core" />
+    <Reference Include="System.Xml.Linq" />
+    <Reference Include="System.Data.DataSetExtensions" />
+    <Reference Include="Microsoft.CSharp" />
+    <Reference Include="System.Data" />
+    <Reference Include="System.Deployment" />
+    <Reference Include="System.Drawing" />
+    <Reference Include="System.Net.Http" />
+    <Reference Include="System.Windows.Forms" />
+    <Reference Include="System.Xml" />
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="Classes\LexicalAnalyzer.cs" />
+    <Compile Include="Classes\LexicalState0.cs" />
+    <Compile Include="Classes\LexicalState1.cs" />
+    <Compile Include="Classes\LexicalState10.cs" />
+    <Compile Include="Classes\LexicalState11.cs" />
+    <Compile Include="Classes\LexicalState12.cs" />
+    <Compile Include="Classes\LexicalState13.cs" />
+    <Compile Include="Classes\LexicalState14.cs" />
+    <Compile Include="Classes\LexicalState15.cs" />
+    <Compile Include="Classes\LexicalState16.cs" />
+    <Compile Include="Classes\LexicalState17.cs" />
+    <Compile Include="Classes\LexicalState18.cs" />
+    <Compile Include="Classes\LexicalState19.cs" />
+    <Compile Include="Classes\LexicalState2.cs" />
+    <Compile Include="Classes\LexicalState20.cs" />
+    <Compile Include="Classes\LexicalState21.cs" />
+    <Compile Include="Classes\LexicalState22.cs" />
+    <Compile Include="Classes\LexicalState23.cs" />
+    <Compile Include="Classes\LexicalState24.cs" />
+    <Compile Include="Classes\LexicalState25.cs" />
+    <Compile Include="Classes\LexicalState26.cs" />
+    <Compile Include="Classes\LexicalState27.cs" />
+    <Compile Include="Classes\LexicalState28.cs" />
+    <Compile Include="Classes\LexicalState29.cs" />
+    <Compile Include="Classes\LexicalState3.cs" />
+    <Compile Include="Classes\LexicalState30.cs" />
+    <Compile Include="Classes\LexicalState31.cs" />
+    <Compile Include="Classes\LexicalState32.cs" />
+    <Compile Include="Classes\LexicalState33.cs" />
+    <Compile Include="Classes\LexicalState34.cs" />
+    <Compile Include="Classes\LexicalState35.cs" />
+    <Compile Include="Classes\LexicalState36.cs" />
+    <Compile Include="Classes\LexicalState37.cs" />
+    <Compile Include="Classes\LexicalState38.cs" />
+    <Compile Include="Classes\LexicalState39.cs" />
+    <Compile Include="Classes\LexicalState4.cs" />
+    <Compile Include="Classes\LexicalState40.cs" />
+    <Compile Include="Classes\LexicalState41.cs" />
+    <Compile Include="Classes\LexicalState42.cs" />
+    <Compile Include="Classes\LexicalState43.cs" />
+    <Compile Include="Classes\LexicalState44.cs" />
+    <Compile Include="Classes\LexicalState45.cs" />
+    <Compile Include="Classes\LexicalState46.cs" />
+    <Compile Include="Classes\LexicalState47.cs" />
+    <Compile Include="Classes\LexicalState5.cs" />
+    <Compile Include="Classes\LexicalState6.cs" />
+    <Compile Include="Classes\LexicalState7.cs" />
+    <Compile Include="Classes\LexicalState8.cs" />
+    <Compile Include="Classes\LexicalState9.cs" />
+    <Compile Include="Classes\LexicalStateBase.cs" />
+    <Compile Include="Classes\LexicalStateInvalid.cs" />
+    <Compile Include="Form1.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Form1.Designer.cs">
+      <DependentUpon>Form1.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Program.cs" />
+    <Compile Include="Properties\AssemblyInfo.cs" />
+    <EmbeddedResource Include="Form1.resx">
+      <DependentUpon>Form1.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Properties\Resources.resx">
+      <Generator>ResXFileCodeGenerator</Generator>
+      <LastGenOutput>Resources.Designer.cs</LastGenOutput>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <Compile Include="Properties\Resources.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DependentUpon>Resources.resx</DependentUpon>
+    </Compile>
+    <None Include="Properties\Settings.settings">
+      <Generator>SettingsSingleFileGenerator</Generator>
+      <LastGenOutput>Settings.Designer.cs</LastGenOutput>
+    </None>
+    <Compile Include="Properties\Settings.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DependentUpon>Settings.settings</DependentUpon>
+      <DesignTimeSharedInput>True</DesignTimeSharedInput>
+    </Compile>
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="App.config" />
+  </ItemGroup>
+  <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
+</Project>
